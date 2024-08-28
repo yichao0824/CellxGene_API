@@ -1,0 +1,65 @@
+url: ~
+template:
+  bootstrap: 5
+  includes:
+    in_header: <script defer data-domain="chanzuckerberg.github.io/cellxgene-census" src="https://plausible.io/js/script.js"></script>
+      
+repo:
+  url:
+    home: https://github.com/chanzuckerberg/cellxgene-census/
+    source: https://github.com/chanzuckerberg/cellxgene-census/tree/main/api/r/cellxgene.census/
+    issue: https://github.com/chanzuckerberg/cellxgene-census/issues
+    user: https://github.com/
+      
+home:
+  sidebar:
+    structure: [links, license, community, authors]
+
+navbar:
+  structure:
+    left: [docsite, reference, articles]
+  components:
+    docsite:
+      text: Main Census Site
+      href: https://chanzuckerberg.github.io/cellxgene-census/
+
+reference:
+- title: Open/retrieve Census data
+  contents:
+    - open_soma
+    - new_SOMATileDBContext_for_census
+    - download_source_h5ad
+    - get_source_h5ad_uri
+- title: Export slices of data
+  contents:
+    - get_seurat
+    - get_single_cell_experiment
+- title: Feature presence matrix
+  contents:
+    - get_presence_matrix
+- title: Versioning of Census builds
+  contents:
+    - get_census_version_description
+    - get_census_version_directory
+
+articles:
+- title: Embeddings
+  navbar: "Use Census embeddings"
+  contents:
+    - census_access_maintained_embeddings
+- title: Analysis
+  navbar: "Explore and analyze the data"
+  contents:
+    - comp_bio_census_info
+    - comp_bio_summarize_axis_query
+    - comp_bio_data_integration
+    - comp_bio_normalizing_full_gene_sequencing
+- title: API
+  navbar: "cellxgene.census capabilities"
+  contents:
+    - census_query_extract
+    - census_citation_generation
+    - census_datasets
+    - census_dataset_presence
+    - census_compute_over_X
+    - census_access_maintained_embeddings

@@ -1,0 +1,37 @@
+Package: cellxgene.census
+Title: CZ CELLxGENE Discover Cell Census
+Version: 1.9.1
+Authors@R: 
+    person("Chan Zuckerberg Initiative Foundation", email = "soma@chanzuckerberg.com",
+           role = c("aut", "cre", "cph", "fnd"))
+Description: API to facilitate the use of the CZ CELLxGENE Discover 
+  Census. For more information about the API and the project visit
+  https://github.com/chanzuckerberg/cellxgene-census/
+License: MIT + file LICENSE
+URL: https://github.com/chanzuckerberg/cellxgene-census
+BugReports: https://github.com/chanzuckerberg/cellxgene-census/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Additional_repositories: https://tiledb-inc.r-universe.dev
+biocViews:
+Imports:
+  aws.s3,
+  dplyr,
+  httr,
+  jsonlite,
+  methods,
+  stats,
+  tiledbsoma,
+  tiledb
+Suggests:
+  bit64,
+  knitr,
+  rmarkdown,
+  SingleCellExperiment (>= 1.20.0),
+  Seurat (>= 4.1.0),
+  testthat (>= 3.0.0),
+  withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+OS_type: unix

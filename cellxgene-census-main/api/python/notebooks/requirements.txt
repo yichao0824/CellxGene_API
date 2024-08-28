@@ -1,0 +1,5 @@
+cellxgene-census
+scikit-misc
+scvi-tools
+jupyterlab
+scikit-learn
